@@ -1,0 +1,1 @@
+this is my sample text doc via git from local device
