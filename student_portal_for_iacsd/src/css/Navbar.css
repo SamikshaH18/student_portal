@@ -10,6 +10,7 @@
     display: block; /* Make the links appear below each other */
     padding: 12px; /* Add some padding */
     text-decoration: none; /* Remove underline from links */
+    width: 200px;
   }
   
   .vertical-menu a:hover {
@@ -20,5 +21,6 @@
     background-color: #00577c; /* Add a green color to the "active/current" link */
     color: white;
   }
+
   
   
