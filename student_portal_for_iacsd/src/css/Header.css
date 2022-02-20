@@ -2,16 +2,30 @@
 .header {
   overflow: hidden;
   background-color: #f1f1f1;
-  padding: 20px 10px;
-  height: 110px;
+  padding: 10px 10px;
+  height: 120px;
+  margin-right: 0%;
+  
+}
+
+.iacsd-logo {
+  float: left;
+}
+
+.cdac-logo {
+  float: right;
 }
 
 .dy {
   text-align: center;
   color: #00577c;
-  background-color: red;
-  width: 90%;
-  margin-top: -1%;
+  width: 100%;
+}
+
+.iacsd {
+  text-align: left;
+  color: #00577c;
+  width: 100%;
 }
 
 /* Style the header links */
@@ -46,6 +60,17 @@
 
 /* Float the link section to the right */
 .header-right {
+  float: right;
+}
+
+.logo-image {
+  background-color: #eee;
+  margin-bottom: 20px;
+}
+
+.logo-image2 {
+  background-color: #eee;
+  margin-bottom: 20px;
   float: right;
 }
 

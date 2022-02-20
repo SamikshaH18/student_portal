@@ -1,6 +1,7 @@
 import React from "react";
 import "../App.css";
 
+
 export default function AddStudent() {
   return (
     <div className="myFormMargins">
@@ -11,7 +12,7 @@ export default function AddStudent() {
         <hr className="topHorizontalRule" />
         <form className="row g-3">
           <div className="col-md-4">
-            <label for="firstName" className="form-label">
+            <label htmlFor="firstName" className="form-label">
               First name
             </label>
             <input
@@ -23,7 +24,7 @@ export default function AddStudent() {
             />
           </div>
           <div className="col-md-4">
-            <label for="lastName" className="form-label">
+            <label htmlFor="lastName" className="form-label">
               Last name
             </label>
             <input
@@ -35,7 +36,7 @@ export default function AddStudent() {
             />
           </div>
           <div className="col-md-3">
-            <label for="gender" className="form-label">
+            <label htmlFor="gender" className="form-label">
               Gender
             </label>
             <select className="form-select" id="gender" required>
@@ -48,7 +49,7 @@ export default function AddStudent() {
             </select>
           </div>
           <div className="col-md-4">
-            <label for="loginId" className="form-label">
+            <label htmlFor="loginId" className="form-label">
               Login ID
             </label>
             <div className="input-group">
@@ -66,7 +67,7 @@ export default function AddStudent() {
           </div>
 
           <div className="col-md-4">
-            <label for="email" className="form-label">
+            <label htmlFor="email" className="form-label">
               Email
             </label>
             <div className="input-group">
@@ -93,14 +94,14 @@ export default function AddStudent() {
           </div>
 
           <div className="col-md-3">
-            <label for="dob" className="form-label">
+            <label htmlFor="dob" className="form-label">
               Date Of Birth
             </label>
             <input type="date" className="form-control" id="dob" required />
           </div>
 
           <div className="col-md-3">
-            <label for="course" className="form-label">
+            <label htmlFor="course" className="form-label">
               Course
             </label>
             <select className="form-select" id="course" required>
@@ -113,7 +114,7 @@ export default function AddStudent() {
             </select>
           </div>
           <div className="col-md-3">
-            <label for="startDate" className="form-label">
+            <label htmlFor="startDate" className="form-label">
               Starting Date
             </label>
             <input
@@ -124,7 +125,7 @@ export default function AddStudent() {
             />
           </div>
           <div className="col-md-3">
-            <label for="mentor" className="form-label">
+            <label htmlFor="mentor" className="form-label">
               Mentor
             </label>
             <select className="form-select" id="mentor" required>
@@ -143,14 +144,14 @@ export default function AddStudent() {
           </div>
           <hr className="middleHr" />
           <div className="col-md-6">
-            <label for="prn" className="form-label">
+            <label htmlFor="prn" className="form-label">
               PRN Number
             </label>
             <input type="number" className="form-control" id="prn" required />
           </div>
 
           <div className="col-md-6">
-            <label for="rollNo" className="form-label">
+            <label htmlFor="rollNo" className="form-label">
               Roll Number
             </label>
             <input
@@ -162,7 +163,7 @@ export default function AddStudent() {
           </div>
 
           <div className="col-md-6">
-            <label for="adharNo" className="form-label">
+            <label htmlFor="adharNo" className="form-label">
               Adhaar Number
             </label>
             <input
@@ -175,7 +176,7 @@ export default function AddStudent() {
           </div>
 
           <div className="col-md-6">
-            <label for="studentPhoto" className="form-label">
+            <label htmlFor="studentPhoto" className="form-label">
               Upload Student Photo
             </label>
             <input
@@ -188,7 +189,7 @@ export default function AddStudent() {
           </div>
 
           <select
-            onchange="print_city('state', this.selectedIndex);"
+            onChange="print_city('state', this.selectedIndex);"
             id="sts"
             name="stt"
             className="form-control"
@@ -198,7 +199,7 @@ export default function AddStudent() {
           <script language="javascript">print_state("sts");</script>
 
           <div className="col-md-4">
-            <label for="studentMobile" className="form-label">
+            <label htmlFor="studentMobile" className="form-label">
               Student Mobile
             </label>
             <div className="input-group">
@@ -227,7 +228,7 @@ export default function AddStudent() {
             </div>
           </div>
           <div className="col-md-4">
-            <label for="parentMobile" className="form-label">
+            <label htmlFor="parentMobile" className="form-label">
               Parent Mobile
             </label>
             <div className="input-group">
@@ -258,7 +259,7 @@ export default function AddStudent() {
           <hr className="middleHr"/>
 
           <div className="col-12">
-            <button className="btn btn-primary" type="submit">
+            <button className="btn btn-primary" type="submit" >
               Add Student
             </button>
           </div>
