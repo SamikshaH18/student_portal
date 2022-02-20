@@ -2,8 +2,8 @@ import React from "react";
 import '../css/Navbar.css';
 export default function () {
   return (
-    <div>
-      <div class="vertical-menu">
+    <span>
+      <span className="vertical-menu">
         <a href="#" class="active">
           Dashboard
         </a>
@@ -15,10 +15,10 @@ export default function () {
         <a href="#">Assignments</a>
         <a href="#">CCEE</a>
         <a href="#">Project</a>
-        <a href="#">Help</a> 
-        <a href="#">Change Password</a>
-        <a href="#">Logout</a>
-      </div>
-    </div>
+        {/* <a href="#">Help</a>  */}
+        {/* <a href="#">Change Password</a>
+        <a href="#">Logout</a> */}
+      </span>
+    </span>
   );
 }
