@@ -1,18 +1,33 @@
 .App {
   text-align: center;
+  overflow: hidden;
 }
 
-.header-hr{
-  height: 10px;
+
+.header-hr {
   size: 30px;
   color: #00577c;
+  position: relative;
+  top: -15px;
+  border: none;
+  height: 12px;
+  background: #00577c;
+  margin-bottom: -13px;
+  box-shadow: #282c34;
 }
+
+.body{
+  overflow: hidden;
+}
+
+
 
 .addStudent {
   text-align: center;
   color: #00577c;
 }
 .topHorizontalRule {
+  overflow: hidden;
   color: #00577c;
   size: 5;
 }
@@ -23,34 +38,7 @@
   margin-bottom: 5%;
 }
 
-/* .header-top {
-  height: 10px;
-  background-color: white;
-} */
-
-
-/* .dy {
-  width: 100%;
-  height: 50px;
-  background-color: #eeeeee;
-  display: inline-block;
-  vertical-align: bottom;
-  text-align: center;
-  line-height: normal;
-  color: #00577c;
-}
-
-.iacsd {
-  width: 100%;
-  height: 60px;
-  background-color: #eeeeee;
-  display: inline-block;
-  vertical-align: middle;
-  text-align: center;
-  line-height: normal;
-  color: #00577c;
-} */
-.container{
+.container {
   margin-left: 0%;
   margin-right: 0%;
   background-color: #eeeeee;
@@ -59,7 +47,6 @@
   size: 0ch;
   height: 0cm;
 }
-
 
 /* logo header css */
 .header img {
@@ -74,7 +61,6 @@
   top: 18px;
   left: 10px;
 }
-
 
 .App-logo {
   height: 40vmin;

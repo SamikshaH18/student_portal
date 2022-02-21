@@ -2,7 +2,7 @@ import "./App.css";
 import AddStudent from "./components/AddStudent";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
-import { BrowserRouter as Router, Route,Routes, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import { Row, Col, Container } from "reactstrap";
 import Dashboard from "../src/components/Dashboard";
 import ViewInfo from "../src/components/ViewInfo";
@@ -16,35 +16,40 @@ import EndModule from "../src/components/EndModule";
 import Help from "../src/components/Help";
 import Logout from "../src/components/Logout";
 import Project from "../src/components/Project";
+import HorizontalNavbar from "./components/HorizontalNavbar";
+
 function App() {
   return (
     <div>
       <Router>
+        <hr className="header-hr" />
+        
         <Header />
-        <hr className="header-hr"/>
-
-        <Row>
+        <HorizontalNavbar />
+        <Row bg-color="white">
           <Col md={2}>
             <Navbar />
           </Col>
           <Col md={10}>
             
             <Routes>
-            <Route path="/" element={<AddStudent />} exact/>
-            <Route path="/view-info" element={<ViewInfo/>} exact/>
-            <Route path="/Timetable" element={<Timetable/>} exact/>
-            <Route path="/Attendance" element={<Attendance/>} exact/>
-            <Route path="/MockTest" element={<MockTest/>} exact/>
-            <Route path="/EndModule" element={<EndModule/>} exact/>
-            <Route path="/Assignment" element={<Assignment/>} exact/>
-            <Route path="/CCEE" element={<CCEE/>} exact/>
-            <Route path="/Project" element={<Project/>} exact/>
-            <Route path="/Help" element={<Help/>} exact/>
-            <Route path="/ChangePassword" element={<ChangePassword/>} exact/>
-            <Route path="/Logout" element={<Logout/>} exact/>
+              <Route path="/" element={<Dashboard/>} exact />
+              <Route path="/view-info" element={<ViewInfo />} exact />
+              <Route path="/Timetable" element={<Timetable />} exact />
+              <Route path="/Attendance" element={<Attendance />} exact />
+              <Route path="/MockTest" element={<MockTest />} exact />
+              <Route path="/EndModule" element={<EndModule />} exact />
+              <Route path="/Assignment" element={<Assignment />} exact />
+              <Route path="/CCEE" element={<CCEE />} exact />
+              <Route path="/Project" element={<Project />} exact />
+              <Route path="/Help" element={<Help />} exact />
+              <Route
+                path="/ChangePassword"
+                element={<ChangePassword />}
+                exact
+              />
+              <Route path="/Logout" element={<Logout />} exact />
             </Routes>
-
-            
           </Col>
         </Row>
       </Router>
