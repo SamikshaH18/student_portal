@@ -1,0 +1,28 @@
+.bg-image-vertical {
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: auto 100%;
+}
+
+.my-color-style-login {
+  color: #709085;
+}
+.my-width-style-login {
+  width: 23rem;
+}
+.my-letter-spacing-style-login {
+  letter-spacing: 1px;
+}
+.my-object-style-login {
+  object-fit: cover;
+  object-position: left;
+  
+}
+
+@media (min-width: 1025px) {
+  .h-custom-2 {
+    height: 100%;
+  }
+}

@@ -1,61 +1,83 @@
 import "./App.css";
-import AddStudent from "./components/AddStudent";
-import Header from "./components/Header";
-import Navbar from "./components/Navbar";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import { Row, Col, Container } from "reactstrap";
-import Dashboard from "../src/components/Dashboard";
-import ViewInfo from "../src/components/ViewInfo";
-import Timetable from "../src/components/Timetable";
-import Attendance from "../src/components/Attendance";
-import Assignment from "../src/components/Assignment";
-import MockTest from "../src/components/MockTest";
-import CCEE from "../src/components/CCEE";
-import ChangePassword from "../src/components/ChangePassword";
-import EndModule from "../src/components/EndModule";
-import Help from "../src/components/Help";
-import Logout from "../src/components/Logout";
-import Project from "../src/components/Project";
-import HorizontalNavbar from "./components/HorizontalNavbar";
+
+import Header from "./components/Common/Header";
+import Navbar from "./components/Student/Navbar";
+
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Row, Col } from "reactstrap";
+import Dashboard from "./components/Student/Dashboard";
+import Notes from "./components/Student/Notes";
+import Timetable from "./components/Student/Timetable";
+import Welcome from "./components/Student/Welcome";
+import Attendance from "./components/Student/Attendance";
+import Assignment from "./components/Student/Assignment";
+import MockTest from "./components/Student/MockTest";
+import CCEE from "./components/Student/CCEE";
+import ChangePassword from "../src/components/Student/ChangePassword";
+import EndModule from "./components/Student/EndModule";
+import Help from "./components/Student/Help";
+import Logout from "./components/Student/Logout";
+import Project from "./components/Student/Project";
+import Marquee from "./components/Common/Marquee";
 
 function App() {
   return (
     <div>
       <Router>
-        <hr className="header-hr" />
-        
-        <Header />
-        <HorizontalNavbar />
-        <Row bg-color="white">
-          <Col md={2}>
-            <Navbar />
-          </Col>
-          <Col md={10}>
-            
-            <Routes>
-              <Route path="/" element={<Dashboard/>} exact />
-              <Route path="/view-info" element={<ViewInfo />} exact />
-              <Route path="/Timetable" element={<Timetable />} exact />
-              <Route path="/Attendance" element={<Attendance />} exact />
-              <Route path="/MockTest" element={<MockTest />} exact />
-              <Route path="/EndModule" element={<EndModule />} exact />
-              <Route path="/Assignment" element={<Assignment />} exact />
-              <Route path="/CCEE" element={<CCEE />} exact />
-              <Route path="/Project" element={<Project />} exact />
-              <Route path="/Help" element={<Help />} exact />
-              <Route
-                path="/ChangePassword"
-                element={<ChangePassword />}
-                exact
-              />
-              <Route path="/Logout" element={<Logout />} exact />
-            </Routes>
-          </Col>
-        </Row>
-      </Router>
+        <div className="overflow-div">
+          <Header />
 
-      {/* <Navbar/> */}
-      {/* <AddStudent /> */}
+          <Marquee />
+          <Row bg-color="white">
+            <Col md={2}>
+              <Navbar />
+            </Col>
+            <Col md={10}>
+              <div  className="main-middle-column-for-components" >
+                <Routes>
+                  <Route path="/" element={<Welcome />} exact />
+                  <Route path="/Student/" element={<Dashboard />} exact />
+                  <Route path="/Student/Notes" element={<Notes />} exact />
+                  <Route
+                    path="/Student/Timetable"
+                    element={<Timetable />}
+                    exact
+                  />
+                  <Route
+                    path="/Student/Attendance"
+                    element={<Attendance />}
+                    exact
+                  />
+                  <Route
+                    path="/Student/MockTest"
+                    element={<MockTest />}
+                    exact
+                  />
+                  <Route
+                    path="/Student/EndModule"
+                    element={<EndModule />}
+                    exact
+                  />
+                  <Route
+                    path="/Student/Assignment"
+                    element={<Assignment />}
+                    exact
+                  />
+                  <Route path="/Student/CCEE" element={<CCEE />} exact />
+                  <Route path="/Student/Project" element={<Project />} exact />
+                  <Route path="/Student/Help" element={<Help />} exact />
+                  <Route
+                    path="/Student/ChangePassword"
+                    element={<ChangePassword />}
+                    exact
+                  />
+                  <Route path="/Student/Logout" element={<Logout />} exact />
+                </Routes>
+              </div>
+            </Col>
+          </Row>
+        </div>
+      </Router>
     </div>
   );
 }

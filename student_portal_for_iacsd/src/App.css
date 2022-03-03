@@ -1,10 +1,16 @@
 .App {
   text-align: center;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
+.main-middle-column-for-components{
+  max-height: 580px;
+  overflow: auto;
+  
+  
+}
 
-.header-hr {
+/* .header-hr {
   size: 30px;
   color: #00577c;
   position: relative;
@@ -14,7 +20,7 @@
   background: #00577c;
   margin-bottom: -13px;
   box-shadow: #282c34;
-}
+} */
 
 .body{
   overflow: hidden;
@@ -38,11 +44,15 @@
   margin-bottom: 5%;
 }
 
-.container {
+.overflow-div{
+  overflow: hidden;
+}
+
+/* .container {
   margin-left: 0%;
   margin-right: 0%;
   background-color: #eeeeee;
-}
+} */
 .middleHr {
   size: 0ch;
   height: 0cm;
@@ -56,16 +66,16 @@
   background: #555;
 }
 
-.header h1 {
+/* .header h1 {
   position: relative;
   top: 18px;
   left: 10px;
-}
+} */
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
+} */
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
